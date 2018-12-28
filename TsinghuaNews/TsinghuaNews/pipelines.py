@@ -6,7 +6,8 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import pymongo
-from TsinghuaNews.settings import  mongo_host,mongo_port,mongo_db_name,mongo_db_collection
+from TsinghuaNews.settings import mongo_host,mongo_port,mongo_db_name,mongo_db_collection
+from scrapy.exceptions import DropItem
 
 class TsinghuanewsPipeline(object):
     def __init__(self):
@@ -19,6 +20,12 @@ class TsinghuanewsPipeline(object):
         self.post = mydb[sheetname]
 
     def process_item(self, item, spider):
-        data = dict(item)
-        self.post.insert(data)
+        valid = True
+        for single_new in item:
+            if not single_new:  #异常处理
+                valid = False
+                raise DropItem("Missing {0}!".format(single_new))
+            if valid:
+                self.post.insert(dict(item))
+
         return item

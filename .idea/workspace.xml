@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b214edec-c5bf-4e8e-a72e-d4caa81d3d18" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/example.html" afterPath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/example.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/news.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/main.py" afterPath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/news.json" afterPath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/news.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/pipelines.py" afterPath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/settings.py" afterPath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/spiders/THUNewsSpider.py" afterPath="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/spiders/THUNewsSpider.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +16,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/TsinghuaNews$main.coverage" NAME="main Coverage Results" MODIFIED="1545981719935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews" />
+    <SUITE FILE_PATH="coverage/TsinghuaNews$main.coverage" NAME="main Coverage Results" MODIFIED="1545994539233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews" />
+    <SUITE FILE_PATH="coverage/TsinghuaNews$solution.coverage" NAME="solution Coverage Results" MODIFIED="1545999705785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/学习资料/大四上/云数据管理(2)/IDA/828602222_2_课程作业/IDA作业" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -34,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="248">
-              <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+              <caret line="70" column="44" lean-forward="false" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -43,8 +44,8 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="554">
+              <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
               <folding>
                 <element signature="e#194#208#0" expanded="true" />
               </folding>
@@ -55,7 +56,7 @@
       <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
+            <state relative-caret-position="344">
               <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="18" />
               <folding>
                 <element signature="e#169#195#0" expanded="true" />
@@ -64,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+              <caret line="1" column="48" lean-forward="true" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -77,9 +78,23 @@
       <file leaf-file-name="THUNewsSpider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/spiders/THUNewsSpider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="226">
+              <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="solution.py" pinned="false" current-in-tab="true">
+        <entry file="file://D:/学习资料/大四上/云数据管理(2)/IDA/828602222_2_课程作业/IDA作业/solution.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,7 +106,10 @@
       <find>USER</find>
       <find>TsinghuanewsItem</find>
       <find>MIDD</find>
+      <find>re</find>
       <find>ITEM</find>
+      <find>ue86</find>
+      <find>replace</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,10 +123,11 @@
       <list>
         <option value="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/items.py" />
         <option value="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/middlewares.py" />
-        <option value="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/spiders/THUNewsSpider.py" />
-        <option value="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/main.py" />
         <option value="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/settings.py" />
         <option value="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/pipelines.py" />
+        <option value="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/spiders/THUNewsSpider.py" />
+        <option value="$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/main.py" />
+        <option value="D:/学习资料/大四上/云数据管理(2)/IDA/828602222_2_课程作业/IDA作业/solution.py" />
       </list>
     </option>
   </component>
@@ -118,9 +137,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="516" />
-    <option name="y" value="84" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="705" />
+    <option name="y" value="187" />
     <option name="width" value="1133" />
     <option name="height" value="1100" />
   </component>
@@ -174,7 +193,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -195,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.solution">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -214,9 +233,32 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="solution" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="D:/学习资料/大四上/云数据管理(2)/IDA/828602222_2_课程作业/IDA作业" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TsinghuaNews" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:/学习资料/大四上/云数据管理(2)/IDA/828602222_2_课程作业/IDA作业/solution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.solution" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.solution" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -234,14 +276,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="516" y="84" width="1133" height="1100" extended-state="1" />
-    <editor active="true" />
+    <frame x="705" y="187" width="1133" height="1100" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22023277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43781596" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48634985" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -307,6 +348,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="14" column="109" lean-forward="false" selection-start-line="14" selection-start-column="109" selection-end-line="14" selection-end-column="109" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="70" column="44" lean-forward="false" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -321,7 +372,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
+        <state relative-caret-position="344">
           <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="18" />
           <folding>
             <element signature="e#169#195#0" expanded="true" />
@@ -329,28 +380,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/spiders/THUNewsSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="554">
+          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
           <folding>
             <element signature="e#194#208#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/settings.py">
+    <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/news.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+        <state relative-caret-position="-360">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -358,8 +401,28 @@
     <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <caret line="1" column="48" lean-forward="true" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TsinghuaNews/TsinghuaNews/spiders/THUNewsSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/学习资料/大四上/云数据管理(2)/IDA/828602222_2_课程作业/IDA作业/solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
