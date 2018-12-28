@@ -1,0 +1,299 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>清华材料学院成果入选2018年度中国高等学校十大科技进展</title>
+<meta name="keywords" content="材料学院,原子面的磁成像 ">
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="/publish/thunews/css/base.css" rel="stylesheet" type="text/css">
+<link href="/publish/thunews/font/font.css" rel="stylesheet" type="text/css">
+<link href="/publish/thunews/css/inner.css" rel="stylesheet" type="text/css">
+<script src="/publish/thunews/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/publish/thunews/css/slick.css">
+<script src="/publish/thunews/js/slick.min.js" type="text/javascript"></script>
+<script src="/publish/thunews/js/regexcut.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/publish/thunews/css/owl.carousel.css">
+<script src="/publish/thunews/js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="/publish/thunews/js/comm.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="/publish/thunews/js/html5.js" type="text/javascript"></script>
+<script src="/publish/thunews/js/json2.js" type="text/javascript"></script>
+<![endif]-->
+<script src="/publish/thunews/js/regex-cn.js" type="text/javascript"></script>
+<!--[if lt IE 8]>
+ <link rel="stylesheet" href="/publish/thunews/font/ie7/ie7.css">
+<!--<![endif]-->
+<script language="javascript" type="text/javascript">
+  window.onerror = function(){return true;};
+  function cutSummary(summaryStr,lengTh){
+    if(summaryStr.length>lengTh){
+   summaryStr=summaryStr.substring(0,lengTh)+"...";
+    }
+    document.write(summaryStr);
+  }
+ $(document).ready(function() {
+  $("a.nivo-nextNav").click();
+ });
+ </script>
+<script type="text/javascript">
+// 对Date的扩展，将 Date 转化为指定格式的String 
+// 月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符， 
+// 年(y)可以用 1-4 个占位符，毫秒(S)只能用 1 个占位符(是 1-3 位的数字) 
+// 例子： 
+// (new Date()).Format("yyyy-MM-dd hh:mm:ss.S") ==> 2006-07-02 08:09:04.423 
+// (new Date()).Format("yyyy-M-d h:m:s.S")      ==> 2006-7-2 8:9:4.18 
+Date.prototype.Format = function(fmt) 
+{ 
+ //author: meizz 
+  var o = { 
+    "M+" : this.getMonth()+1,                 //月份 
+    "d+" : this.getDate(),                    //日 
+    "h+" : this.getHours(),                   //小时 
+    "m+" : this.getMinutes(),                 //分 
+    "s+" : this.getSeconds(),                 //秒 
+    "q+" : Math.floor((this.getMonth()+3)/3), //季度 
+    "S"  : this.getMilliseconds()             //毫秒 
+  }; 
+  if(/(y+)/.test(fmt)) 
+    fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length)); 
+  for(var k in o) 
+    if(new RegExp("("+ k +")").test(fmt)) 
+  fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length))); 
+  return fmt; 
+}
+//2015.08 年.月
+function getYM(dtStr,id){
+var dtArr = dtStr.split("-");
+var dt = new Date(dtArr[0], dtArr[1]-1, dtArr[2]);
+//var time1 = dt.Format("yyyy-MM-dd hh:mm:ss");  
+var time2 = dt.Format("yyyy.MM.dd");  
+var yyyy=time2.substr(0,7);
+$("#"+id).text(yyyy);
+return yyyy; 
+}
+//10 日期
+function getDay(dtStr,id){
+var dtArr = dtStr.split("-");
+var dt = new Date(dtArr[0], dtArr[1]-1, dtArr[2]);
+//var time1 = dt.Format("yyyy-MM-dd hh:mm:ss");  
+var time2 = dt.Format("yyyy.MM.dd");
+var md=time2.substr(8); 
+$("#"+id).text(md);
+return md; 
+}
+//2015.08.10 年.月.日
+function getYMD(dtStr,id){
+var dtArr = dtStr.split("-");
+var dt = new Date(dtArr[0], dtArr[1]-1, dtArr[2]);
+//var time1 = dt.Format("yyyy-MM-dd hh:mm:ss");  
+var time2 = dt.Format("yyyy.MM.dd");
+//var md=time2.substr(8);
+$("#"+id).text(time2);
+return time2; 
+}
+function getMdd(dtStr){
+var dtArr = dtStr.split("-");
+var dt = new Date(dtArr[0], dtArr[1]-1, dtArr[2]);
+//var time1 = dt.Format("yyyy-MM-dd hh:mm:ss");  
+var time2 = dt.Format("MM.dd.yyyy");
+var mdd=time2.substr(0,5); 
+$(".mdd").text(mdd);
+return mdd; 
+}
+</script>
+<script type="text/javascript">
+function getResData(fwl){
+ jQuery.get("/application/visitor/article_list_visitors_2.jsp?articleID="+fwl+"&"+Math.random(), function(data){
+   $(".itemlist_total_"+fwl).empty().text(data);
+ });
+};
+ getResData('20181228102234212361194');
+ getResData('20181226151637292709340');
+ getResData('20181225142941804885368');
+ getResData('20181226102616310504098');
+ getResData('20181224154152813466704');
+ getResData('20181222222053994506159');
+ getResData('20181221205056622681509');
+ getResData('20181220151528598986617');
+ getResData('20181218231926267268505');
+ getResData('20181218181219259583734');
+ getResData('20181217160258100454574');
+ getResData('20181217152435437885750');
+ getResData('20181217160320346147528');
+ getResData('20181215210439098938356');
+ getResData('20181215142203940206661');
+ getResData('20181214144718026650446');
+ getResData('20181214114152454992141');
+ getResData('20181213103106596808657');
+ getResData('20181212185438197247599');
+ getResData('20181210104615689899376');
+ getResData('20181210201218998202902');
+ getResData('20181210113540992396542');
+ getResData('20181210093604121867500');
+ getResData('20181209114753266194471');
+ getResData('20181208002214988600748');
+ getResData('20181207115015800585273');
+ getResData('20181207144112505992605');
+ getResData('20181206143405727242596');
+ getResData('20181206204920650153976');
+ getResData('20181204112156333788767');
+ getResData('20181205153708275289171');
+ getResData('20181204101243026489658');
+ getResData('20181203155505125913346');
+ getResData('20181203120404503811191');
+ getResData('20181203094134268371608');
+ getResData('20181201210613086464997');
+ getResData('20181201101431144925774');
+ getResData('20181201000213207286524');
+ getResData('20181129170128549682016');
+ getResData('20181128140839036807253');
+ getResData('20181126152523317186487');
+ getResData('20181126092623953270562');
+ getResData('20181126121128649413104');
+ getResData('20181126100457932601817');
+ getResData('20181126091056242491512');
+ getResData('20181126092458424277193');
+ getResData('20181123100319866480071');
+ getResData('20181122145519226595871');
+ getResData('20181120103949967112593');
+ getResData('20181119161938692516002');
+</script>
+<link href="/publish/thunews/css/manhuahtmlarea.1.0.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/publish/thunews/js/manhuahtmlarea.1.0.js"></script>
+<script>
+auto_play = false;
+</script>
+</head>
+<body>
+<header class="clearfix">
+<section class="mainWrap">
+     <div class="topwraper relative clearfix">
+          <div class="ulink">
+                <ul class="clearfix">
+                     <li class="socialnet"><a href="http://weibo.com/tsinghua" class="circle"  title="微博" target="_blamk"><i class="thunews-weibo"></i></a>
+                    <li class="socialnet"><a href="javascript:;" class="circle"  title="微信"><i class="thunews-weixin"></i></a>
+                     <div class="socialwraper"><i><em></em></i><img src="/publish/thunews/images/weixin.jpg"></div>
+                    </li>
+                  </li>
+                      <li class="socialnet"><a href="/publish/thunews/10237/index.html" class="circle"   title="rss订阅"><i class="thunews-rss"></i></a></li>
+                    <li class="mr"><a href="/publish/thunewsen/index.html" class="en" target="_blank">ENGLISH</a></li>
+                                        <li class="thuhome mr"><a href=http://www.tsinghua.edu.cn target="_blank">清华主页</a></li>
+                </ul>
+            </div>
+            <a href="/publish/thunews/index.html" class="logo"><img src="/publish/thunews/images/logo.png" alt="logo"></a>
+            <div class="search">
+               <form id="searchForm" target="_blank">
+<input name="query" type="text" >
+<input name="ie" type="hidden" value="utf8">
+<input name="cid" type="hidden" value="3">
+ <a href="javascript:;" onclick="searchSub();"><i class="thunews-search"></i></a>
+</form>
+            </div>
+        </div>
+        </section>
+<script src="/publish/thunews/js/searchsub.js"></script><nav class="navwrap yahei">
+ <section class="mainWrap">
+  <div id="smenu" class="smenu"><i class="thunews-bars"></i></div>
+  <script type="text/javascript">
+   jQuery(function(){
+    jQuery('#nav li a [class^=item]').removeClass('current');
+    jQuery('#nav li a.item0').addClass('current');
+   });
+  </script>
+  <ul id="nav">
+   <li><a href="/publish/thunews/index.html" class="item0">首页</a></li>
+   <li><a href="/publish/thunews/9648/index.html" class="item9648">头条新闻</a></li>
+   <li><a href="/publish/thunews/10303/index.html" class="item10303">综合新闻</a></li>
+   <li><a href="/publish/thunews/9649/index.html" class="item9649">要闻聚焦</a>
+   <ul>
+    <i><em></em></i>
+    <li><a href="/publish/thunews/9658/index.html#dqwz">时讯快递</a></li>
+    <li><a href="/publish/thunews/9659/index.html#dqwz">学术科研</a></li>
+    <li><a href="/publish/thunews/9660/index.html#dqwz">教育教学</a></li>
+    <li><a href="/publish/thunews/9661/index.html#dqwz">招生就业</a></li>
+    <li><a href="/publish/thunews/9662/index.html#dqwz">交流合作</a></li>
+    <li><a href="/publish/thunews/9663/index.html#dqwz">观点报道</a></li>
+    <li><a href="/publish/thunews/9664/index.html#dqwz">社会服务</a></li>
+   </ul>
+   </li>
+   <li><a href="/publish/thunews/9650/index.html" class="item9650">媒体清华</a></li>
+   <li><a href="/publish/thunews/9652/index.html" class="item9652">图说清华</a></li>
+   <li><a href="http://tv.tsinghua.edu.cn/" target="_blank">视频空间</a></li>
+   <li><a href="/publish/thunews/9656/index.html" class="item9656">清华人物</a></li>
+   <li><a href="/publish/thunews/9654/index.html" class="item9654">校园写意</a>
+   <ul>
+    <i><em></em></i>
+    <li><a href="/publish/thunews/9665/index.html#dqwz">广角透视</a></li>
+    <li><a href="/publish/thunews/9666/index.html#dqwz">校园生活</a></li>
+    <li><a href="/publish/thunews/9667/index.html#dqwz">微观清华</a></li>
+    <li><a href="/publish/thunews/9668/index.html#dqwz">清华史苑</a></li>
+    <li><a href="/publish/thunews/9669/index.html#dqwz">高教视点</a></li>
+   </ul>
+   </li>
+   <li><a href="/publish/thunews/9655/index.html" class="item9655">专题新闻</a></li>
+   <li><a href="/publish/thunews/10304/index.html" class="item10304">新闻排行</a></li>
+   <li><a href="/publish/thunews/9657/index.html" class="item9657">新闻合集</a></li>
+   </ul>
+   
+ </section>
+</nav></header>
+<div class="content yahei subchannel">
+ <div class="mainWrap clearfix">
+  <section class="colunm1">
+   <div class="usharewraper">
+    
+    <nav id="findjctj"><a>&nbsp;<A href='/publish/thunews/index.html' class='navigation_style'>首页</a>&nbsp;&nbsp - </a><a><A href='/publish/thunews/9648/index.html' class='navigation_style'>头条新闻</a>&nbsp;&nbsp - </a><a>内容</a> </nav>
+   </div>
+   <article class="article">
+   <h1 style="TEXT-ALIGN: justify; -ms-text-justify: inter-ideograph">清华材料学院成果入选2018年度中国高等学校十大科技进展</h1><hr/>
+   <p style="TEXT-ALIGN: justify; TEXT-INDENT: 2em; -ms-text-justify: inter-ideograph">
+	<strong>清华新闻网12月28日电</strong> 
+	12月26日，教育部发布2018年度中国高等学校十大科技进展评选结果，清华大学材料学院钟虓等人完成的成果&ldquo;原子尺度测量材料轨道与自旋磁矩&rdquo;成功入选。
+   </p>
+   <p style="TEXT-ALIGN: justify; TEXT-INDENT: 2em; -ms-text-justify: inter-ideograph">原子尺度的定量磁结构表征和对原子轨道与自旋磁矩的测量能使学术界对磁性材料物理性能的理解、预测与调控深入至原子层面。该问题是材料磁性表征领域面临的重大挑战，也是国际学界的难题。电子显微学作为材料科学的基本研究手段可以获取原子尺度的结构信息，而在实现原子尺度磁表征方面仍存在相当大的困难。&nbsp;</p>
+   <p style="TEXT-ALIGN: center; -ms-text-justify: inter-ideograph"><img title="1.jpg" src="/publish/thunews/9659/20181228102234212361194/1545963914132.jpg"/></p>
+   <p style="TEXT-ALIGN: center; -ms-text-justify: inter-ideograph"><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai">图1. 原子面分辨电子磁圆二色谱测量材料轨道与自旋磁矩示意图</span></p>
+   <p style="TEXT-ALIGN: justify; TEXT-INDENT: 2em; -ms-text-justify: inter-ideograph">清华大学朱静、钟虓、于荣团队多年来致力于发展分析电子显微学的基础研究，提出原子面分辨电子磁圆二色谱方法，突破性地实现了逐层原子面的磁成像，测量出原子尺度的轨道自旋磁矩比，将自旋表征磁圆二色谱的分辨率从微米纳米尺度推进到了原子尺度。通过建立原子尺度材料结构-成分-磁矩的关系，实现了在原子尺度理解自旋、晶格、电荷、轨道等多个自由度的结构参量与材料磁性能之间的相互关联。&nbsp;</p><p style="TEXT-ALIGN: center; -ms-text-justify: inter-ideograph"><img title="2.jpg" src="/publish/thunews/9659/20181228102234212361194/1545963935331.jpg"/>
+   </p>
+   <p style="TEXT-ALIGN: center; -ms-text-justify: inter-ideograph"><span style="FONT-FAMILY: 楷体,楷体_GB2312, SimKai">图2. 原子尺度材料结构-成分-磁矩的协同测量</span></p>
+   <p style="TEXT-ALIGN: justify; TEXT-INDENT: 2em; -ms-text-justify: inter-ideograph">该研究成果发表在2018年《自然·材料》等期刊上，受到国内外同行的广泛关注，《今日材料》(<em>Materials Today</em>)以专题新闻评述本工作：&ldquo;因为材料的界面和表面的磁性能往往会跟体材料的性能有较大的差别，目前还没有足够空间分辨率来真正测量这样的界面。这项新工作可以彻底改变现状。&quot;</p>
+   <p style="TEXT-ALIGN: justify; TEXT-INDENT: 2em; -ms-text-justify: inter-ideograph">&ldquo;中国高等学校十大科技进展&rdquo;由教育部科学技术委员会组织评选，自1998年开展以来至今已评选21届，对提升高等学校科技的整体水平、增强高校的科技创新能力发挥了积极作用，并产生了较大的社会影响，赢得了较高的声誉。</p>
+   <p style="TEXT-ALIGN: right; -ms-text-justify: inter-ideograph">供稿：材料学院 成果与知识产权管理办公室 编辑：华山 审核：襄楠</p>
+    <div class="articletimewrapper">
+            <div class="articletime"><i class="thunews-clock-o"></i>2018年12月28日 11:02:08　　清华新闻网</div>
+    </div>
+   </article>
+  </section>
+  <section class="colunm2">
+   <section class="mod">
+    <h2><a href="/publish/thunews/9652/index.html" class="more" target="_blank">更多 &#8250;</a><span class="iconwraper"><i class="thunews-picture-o"></i></span>图说清华</h2>
+    <div class="slidegallery">
+     <ul id="thunews_tsqh">
+     
+     </ul>
+    </div>
+    
+   </section>
+   <section class="mod withborder">
+    <h2 class="red"><span class="iconwraper"><i class="thunews-line-chart"></i></span>最新更新</h2>
+   
+    <div id="datalist_secl"></div>
+   </section>
+  </section>
+ </div>
+</div>
+<footer>
+ <div class="mainWrap clearfix">
+     <section>
+         <div class="thulogo"><img src="/publish/thunews/images/thulogo.png"></div>
+            <div class="copyright"><span><a href="/publish/thunews/10274/index.html">网站地图</a>　│　<a href="/publish/thunews/10225/index.html">关于我们</a>　│　<a href="/publish/thunews/10217/index.html">友情链接</a>　│　<a href="http://www.tsinghua.edu.cn/publish/newthu/newthu_cnt/intothu/picture/map.png" target="_blank">清华地图</a></span>
+            清华大学新闻中心版权所有，清华大学新闻网编辑部维护，电子信箱:news@tsinghua.edu.cn<br>
+Copyright 2001-2020 news.tsinghua.edu.cn. All rights reserved.
+            </div>
+        </section>
+    </div></footer>
+
+</body>
+</html>
