@@ -47,7 +47,7 @@ class ThunewsspiderSpider(scrapy.Spider):
         news_item["date"] = day + time
         #单纯的以p标签作为识别
         paragraph_list = ""
-        if("组图" in news_item["title"]):
+        if("组图" in news_item["title"] or "图片传真" in news_item["title"]):
             paragraph_list = response.selector.xpath('//article[ @class ="article"][1]').extract()
         else:
             paragraph_list = response.selector.xpath('//article[@class="article"][1]/p').extract()
