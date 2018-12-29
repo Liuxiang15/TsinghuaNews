@@ -16,4 +16,5 @@ class TsinghuanewsItem(scrapy.Item):
     keywords = scrapy.Field()
     date = scrapy.Field()
     content = scrapy.Field()
+    url = scrapy.Field()
 

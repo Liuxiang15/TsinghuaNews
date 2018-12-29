@@ -95,4 +95,4 @@ ITEM_PIPELINES = {
 mongo_host = "localhost"
 mongo_port = 27017
 mongo_db_name = "TsinghuaNews"
-mongo_db_collection = "THUNews"
+mongo_db_collection = "THUNewsUrl"

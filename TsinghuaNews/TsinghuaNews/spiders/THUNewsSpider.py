@@ -13,6 +13,8 @@ class ThunewsspiderSpider(scrapy.Spider):
     #爬虫名不能和项目名重复
     name = 'THUNewsSpider'
     allowed_domains = ['news.tsinghua.edu.cn']
+    current_url = ""
+
 
 
     #头条http://news.tsinghua.edu.cn/publish/thunews/9648/index.html 39
@@ -20,25 +22,28 @@ class ThunewsspiderSpider(scrapy.Spider):
     #start_urls = ['http://news.tsinghua.edu.cn/publish/thunews/9648/2018/20181228102234212361194/20181228102234212361194_.html']
     def start_requests(self):
         #测试先获取10个网址
-        for i in range(2, 478):
+        for i in range(2,3):
+
             yield scrapy.Request(
-                url='http://news.tsinghua.edu.cn/publish/thunews/10303/index_{}.html'.format(i),
-                callback=self.get_urls
+                url =  'http://news.tsinghua.edu.cn/publish/thunews/10303/index_{}.html'.format(i),
+                callback = self.get_urls
             )
 
     def get_urls(self, response):
+        print("----------------------------------")
         url_number = 21
         url_list = response.selector.xpath('//section[1]/ul/li/figure/figcaption/a/@href').extract()
         domain_name = 'http://news.tsinghua.edu.cn'
         for index, path in enumerate(url_list):
             yield scrapy.Request(
                 url=domain_name+path,
-                callback=self.parse
+                callback=lambda response, url=domain_name+path:self.parse(response, url)
             )
 
-    def parse(self, response):
+    def parse(self, response, url):
         #print(response.text)
         news_item = TsinghuanewsItem()
+        news_item["url"] = url
         news_item["title"] = response.selector.xpath("//title/text()").extract_first()
         news_item["keywords"] = response.selector.xpath('//meta[@name="keywords"]/@content').extract_first().split(' ')[0]
         datestr_list = response.selector.xpath('//div[@class="articletime"]/text()').extract_first().split(' ')
@@ -74,7 +79,4 @@ class ThunewsspiderSpider(scrapy.Spider):
         print(news_item)
         yield news_item
 
-    def find_tag(self):
-    #本函数是为了找p段落中的strong，div等标签对应的文本，并且将他们和p标签对应文本的顺序也应该知道
-    #然后顺序组装成相应段落文本
-        pass
+
