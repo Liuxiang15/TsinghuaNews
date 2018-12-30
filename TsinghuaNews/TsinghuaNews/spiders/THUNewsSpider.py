@@ -23,14 +23,13 @@ class ThunewsspiderSpider(scrapy.Spider):
     def start_requests(self):
         #测试先获取10个网址
         for i in range(2,3):
-
             yield scrapy.Request(
                 url =  'http://news.tsinghua.edu.cn/publish/thunews/10303/index_{}.html'.format(i),
                 callback = self.get_urls
             )
 
     def get_urls(self, response):
-        print("----------------------------------")
+        # print("----------------------------------")
         url_number = 21
         url_list = response.selector.xpath('//section[1]/ul/li/figure/figcaption/a/@href').extract()
         domain_name = 'http://news.tsinghua.edu.cn'
@@ -76,7 +75,7 @@ class ThunewsspiderSpider(scrapy.Spider):
         #     content += paragraph
         #     content += "\n"                         #加换行符
         news_item["content"] = content
-        print(news_item)
+        # print(news_item)
         yield news_item
 
 
