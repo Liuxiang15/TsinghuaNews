@@ -19,24 +19,14 @@ class TsinghuanewsPipeline(object):
         mydb = client[dbname]
         self.post = mydb[sheetname]
         self.url_sets = set()
-
+        self.title_sets = set()
     def process_item(self, item, spider):
-        valid = True
-        for data in item:
-            # print("-------------single_new----------------------")
-            # print(data)
-            # print("-------------single_new!!----------------------")
-            if not data:  #异常处理
-                valid = False
-                raise DropItem("Missing {0}!".format(data))
-            if valid:
-                item_dict = dict(item)
-                if item_dict["url"] in self.url_sets:
-                    print("集合中的url是")
-                    print(self.url_sets)
-                    raise DropItem("Duplicate item found: %s" % item)
-                    
-                else:
-                    self.url_sets.add(item_dict["url"])
-                    self.post.insert(item_dict)
-                    return item
+        item_dict = dict(item)
+        if not item_dict:   #判断是否为空
+            raise DropItem("数据错误!")
+        if item_dict["title"] in self.title_sets or item_dict["url"] in self.url_sets:
+            raise DropItem("Duplicate item found")
+        else:
+            new_id = self.post.insert(item_dict)
+            self.url_sets.add(item_dict["url"])
+            self.title_sets.add(item_dict["title"])
