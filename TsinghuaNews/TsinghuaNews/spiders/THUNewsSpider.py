@@ -21,10 +21,9 @@ class ThunewsspiderSpider(scrapy.Spider):
         # url_list = [9648, 10303, 9650, 9652]
         # page_num_list = [39, 479, 329, 16]
         url_list = [9655]
-        # page_num_list = [32]
-        page_num_list = [3]
+        max_page_num = 32
         for index, i in enumerate(url_list):
-            for j in range(2, page_num_list[index] + 1):
+            for j in range(2, max_page_num+1):
                 yield scrapy.Request(
                     url =  'http://news.tsinghua.edu.cn/publish/thunews/{}/index_{}.html'.format(i, j),
                     callback = self.get_urls
@@ -72,9 +71,9 @@ class ThunewsspiderSpider(scrapy.Spider):
         news_item["url"] = url
         # try:
         news_item["title"] = response.selector.xpath("//title/text()").extract_first()
-        news_item["keywords"]  = response.selector.xpath('//meta[@name="keywords"]').extract_first().split(' ')[0]
-        # print("关键词是：")
-        # print(response.selector.xpath('//meta[@name="keywords"]/@content').extract())
+        news_item["keywords"]  = response.selector.xpath('//meta[@name="keywords"]/@content').extract_first().split(' ')[0]
+        print("关键词是：")
+        print(news_item["keywords"])
         datestr_list = response.selector.xpath('//div[@class="articletime"]/text()').extract_first().split(' ')
         day = datestr_list[0]
         time = datestr_list[1].split("\u3000")[0]
