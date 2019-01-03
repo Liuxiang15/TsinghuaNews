@@ -27,6 +27,13 @@ class TsinghuanewsPipeline(object):
         if item_dict["title"] in self.title_sets or item_dict["url"] in self.url_sets:
             raise DropItem("Duplicate item found")
         else:
-            new_id = self.post.insert(item_dict)
-            self.url_sets.add(item_dict["url"])
-            self.title_sets.add(item_dict["title"])
+            exist_flag = True
+            for data in self.post.find():
+                if item_dict["title"] == data["title"] or item_dict["url"] == data["url"]:
+                    exist_flag = False
+                    break
+            if exist_flag:
+                new_id = self.post.insert(item_dict)
+                self.url_sets.add(item_dict["url"])
+                self.title_sets.add(item_dict["title"])
+            
